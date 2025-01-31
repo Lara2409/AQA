@@ -1,5 +1,5 @@
 import {When} from '@wdio/cucumber-framework';
-import GettingStartedPage from '../pageobjects/GettingStartedPage';
+import GettingStartedPage from '../pageobjects/GettingStartedPage.js';
 
 const pages = new Map([  
   ['Getting Started Page', GettingStartedPage],  

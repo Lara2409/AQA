@@ -1,5 +1,5 @@
-import Element from '../core/Element';
-import BasePage from './BasePage';
+import Element from '../core/Element.js';
+import BasePage from './BasePage.js';
 
 const pagination = new Element('.pagination-nav__label');
 

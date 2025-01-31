@@ -7,11 +7,12 @@ export const config = {
   specs: ['../features/**/*.feature'],
   capabilities: [
     {
-      maxInstances: 5,
+      maxInstances: 2,
       browserName: 'chrome',
       'goog:chromeOptions': {
         args: process.env.CI
-          ? ['--headless', '--disable-gpu', '--no-sandbox'] : ['--start-maximized'],
+          ? ['--headless', '--disable-gpu', '--no-sandbox']
+          : ['--start-maximized'],
       },
     },
   ],
@@ -38,9 +39,8 @@ export const config = {
     'spec',
   ],
   cucumberOpts: {
-    require: ['./step-definitions/**/*.js'],
+    require: ['./step-definitions/*.js'],
     backtrace: false,
-    requireModule: ['@babel/register'],
     dryRun: false,
     failFast: false,
     colors: true,
@@ -66,3 +66,4 @@ export const config = {
     }
   },
 };
+
